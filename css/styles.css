@@ -1,0 +1,167 @@
+:root {
+  --accent-color: #4d5ae5;
+  --primary-text-color: #434455;
+  --nav-color: #2e2f42;
+  --title-color: #2e2f42;
+ --nav-accent-color: #404bbf; 
+}
+body {
+  background: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  color: var(--primary-text-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+/* -------компоненти-------- */
+.list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+/* -------/компоненти-------- */
+/* -------шапка------- */
+.header {
+}
+.nav {
+  
+}
+.logo {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-thema-light{
+  color: var(--nav-color);
+}
+.menu-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  
+  color: var(--nav-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--nav-accent-color);
+}
+
+.contacts-list{font-style: normal;}
+.contacts-item {
+  color: var(--primary-text-color);
+  
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* -------/шапка------- */
+/*-------- банер -------*/
+
+.hero-section {
+  background-color: #2e2f42;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.modal-btn {
+  font-family:"Roboto", sans-serif; ;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+}
+/*-------- /банер -------*/
+/* ----переваги компанії---- */
+
+/* ----/переваги компанії---- */
+
+.footer-container {
+  color: #e7e9fc;
+  background: #2e2f42;
+}
+.logo-thema-dark {
+  color: #f4f4fd;
+}
+/* =========2 сторінка  ========*/
+.filter-btn {
+  font-family: "Roboto", sans-serif;
+  color: var(--accent-color);
+  background-color: #f4f4fd;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  color: #ffffff;
+  background-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
