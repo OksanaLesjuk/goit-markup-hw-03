@@ -3,10 +3,10 @@
   --primary-text-color: #434455;
   --nav-color: #2e2f42;
   --title-color: #2e2f42;
- --nav-accent-color: #404bbf; 
+  --nav-accent-color: #404bbf;
 }
 body {
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 
@@ -16,11 +16,18 @@ body {
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style-type: none;
 }
-/* -------компоненти-------- */
+/* ---F----компоненти-------- */
+.container{
+  width: 1128px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .list-title {
   font-weight: 500;
   font-size: 20px;
@@ -44,14 +51,52 @@ body {
   text-transform: capitalize;
   color: var(--title-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
 /* -------/компоненти-------- */
 /* -------шапка------- */
-.header {
-}
-.nav {
+.page-header {
+  display: flex;
+  align-items: center;
+ 
   
 }
+
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .logo {
+
+
+  margin-right: 76px;
+
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -62,17 +107,21 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  border: none;
 }
-.logo-thema-light{
+.logo-thema-light {
   color: var(--nav-color);
 }
-.menu-item {
+.menu-item-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
   color: var(--nav-color);
 }
 
@@ -81,11 +130,23 @@ body {
   color: var(--nav-accent-color);
 }
 
-.contacts-list{font-style: normal;}
-.contacts-item {
-  color: var(--primary-text-color);
-  
+.contacts-box {
+  font-style: normal;
+  margin-left: auto;  
+}
+.contacts-list {
+  display: flex;
+}
+.contacts-list-item:nth-child(1) {
+  margin-right: 40px;
 
+}
+.contacts-item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -95,34 +156,40 @@ body {
 /*-------- банер -------*/
 
 .hero-section {
+
+  text-align: center;
+  margin-bottom: 115px;
+  
   background-color: #2e2f42;
 }
 .main-title {
+ 
+  margin-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-
-  text-align: center;
-  letter-spacing: 0.02em;
+letter-spacing: 0.02em;
 
   color: #ffffff;
 }
 
 .modal-btn {
-  font-family:"Roboto", sans-serif; ;
+ display: inline-block;
+  padding: 16px 32px 16px 32px;
+  
+
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
-
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .modal-btn:hover,
@@ -130,16 +197,69 @@ body {
   background-color: #404bbf;
 }
 /*-------- /банер -------*/
+
 /* ----переваги компанії---- */
+
+.privilage-section{
+}
+
+.privilage-container{
+  margin-bottom: 120px;
+}
+
+.privilage-list{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.privilage-list-item{
+
+  max-width: 264px;
+}
+
+
+
+
 
 /* ----/переваги компанії---- */
 
+/* =======що робимо======== */
+.about-section{
+  margin-bottom: 117px;
+}
+.about-title{
+  margin-bottom: 72px;
+}
+.about-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* =============команда =========*/
+.team-section{
+  background-color: #F4F4FD;
+}
+.team-title{
+  
+  margin-bottom: 72px;
+
+}
+.team-list{
+  display: flex;
+  justify-content: space-between;
+}
+.team-list-item
+
+/* ==========футер======== */
 .footer-container {
   color: #e7e9fc;
-  background: #2e2f42;
+  background-color: #2e2f42;
 }
 .logo-thema-dark {
-  color: #f4f4fd;
+ color: #f4f4fd;
 }
 /* =========2 сторінка  ========*/
 .filter-btn {
