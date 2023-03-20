@@ -155,11 +155,16 @@ nav {
   text-align: center;
   
   background-color: #2e2f42;
+  padding-top: 188px;
+padding-bottom: 188px;
 }
 .main-title {
  
   margin-bottom: 48px;
+  width: 496px;
 
+  margin-left: auto;
+margin-right: auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
