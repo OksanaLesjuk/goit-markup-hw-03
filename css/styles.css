@@ -212,6 +212,9 @@ padding-top: 115px;
 
   max-width: 264px;
 }
+.privilege-title{
+  margin-bottom: 8px;
+}
 
 
 
@@ -247,13 +250,13 @@ padding-top: 115px;
 .team-list{
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  /* gap: 24px; */
 
 }
 .team-list-item{
 text-align: center;
-width: 264px; 
-/* flex-basis: calc((100%-72px)/4);  */
+/* width: 264px;  */
+flex-basis: calc((100%-72px)/4); 
 
 }
 .team-list-item:nth-child(4n){
