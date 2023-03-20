@@ -153,7 +153,7 @@ nav {
 .hero-section {
 
   text-align: center;
-  margin-bottom: 115px;
+  
   background-color: #2e2f42;
 }
 .main-title {
@@ -198,7 +198,8 @@ letter-spacing: 0.02em;
 }
 
 .privilage-container{
-  margin-bottom: 120px;
+padding-top: 115px;
+ padding-bottom: 120px;
 }
 
 .privilage-list{
@@ -220,7 +221,7 @@ letter-spacing: 0.02em;
 
 /* =======що робимо======== */
 .about-section{
-  margin-bottom: 117px;
+ padding-bottom: 117px;
 }
 .about-title{
   margin-bottom: 72px;
