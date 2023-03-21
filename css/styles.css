@@ -4,6 +4,7 @@
   --nav-color: #2e2f42;
   --title-color: #2e2f42;
   --nav-accent-color: #404bbf;
+  --text-thema-dark-color: #E7E9FC;
 }
 body {
   background-color: #ffffff;
@@ -285,6 +286,7 @@ nav {
 
 .footer-text {
   width: 264px;
+  color: var(--text-thema-dark-color);
 }
 
 /* =========2 сторінка  ========*/
