@@ -353,7 +353,8 @@ margin-bottom: 72px;
 }
 
 .portfolio-item {
-  width: 360px;
+  /* width: 360px; */
+  width: calc ((100%-48px)/3);
 } 
  
 
